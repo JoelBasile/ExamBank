@@ -13,7 +13,7 @@ function ProfilePage() {
 
     return (
         <Authenticator>
-            {({ user }) => (
+            
                 <div>
                     <input type="file" onChange={handleChange} />
                     <button disabled={!file}
@@ -28,7 +28,7 @@ function ProfilePage() {
                         Upload
                     </button>
                 </div>
-            )}
+            
         </Authenticator>
     );
 };
