@@ -17,12 +17,16 @@ function ProfilePage() {
                 <div>
                     <input type="file" onChange={handleChange} />
                     <button disabled={!file}
-                        onClick={() =>
-                        { if (file) {
-                            uploadData({
-                                path: `profile-pictures/${user?.userId}/${file}`,
-                                data: file,
-                            })}
+                        onClick={() => {
+                            if (file) {
+                                uploadData({
+                                    path: `profile-pictures/${user?.userId}/test.jpg`,
+                                    data: file,
+                                })
+                                window.alert("File uploaded successfully")
+                            } else {
+                                window.alert("Please select a file to upload")
+                            }
                         }}
                     >
                         Upload
