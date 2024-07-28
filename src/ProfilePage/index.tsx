@@ -20,7 +20,7 @@ function ProfilePage() {
                         onClick={() => {
                             if (file) {
                                 uploadData({
-                                    path: `profile-pictures/${user?.userId}/test.jpg`,
+                                    path: `profile-pictures/${user?.userId}`,
                                     data: file,
                                 })
                                 window.alert("File uploaded successfully")
