@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
                 <h1>ExamBank</h1>
             </a>
 
-            <a href="/ProfilePage" className='profile' >
+            <a href="/profile-page" className='profile' >
                 <img src="src/assets/profile-circle.svg" height={40} alt="Profile"></img>
             </a >
         </nav>

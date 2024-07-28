@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <Navbar />
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/ProfilePage" element={<ProfilePage />} />
+        <Route path="/profile-page" element={<ProfilePage />} />
       </Routes>
     </Router>
   </React.StrictMode>

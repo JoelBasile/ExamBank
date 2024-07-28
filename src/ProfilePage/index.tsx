@@ -13,22 +13,23 @@ function ProfilePage() {
 
     return (
         <Authenticator>
-            
+            {({ signOut, user }) => (
                 <div>
                     <input type="file" onChange={handleChange} />
                     <button disabled={!file}
                         onClick={() =>
                         { if (file) {
                             uploadData({
-                                path: `picture-submissions/${file}`,
+                                path: `profile-pictures/${user?.userId}/${file}`,
                                 data: file,
                             })}
                         }}
                     >
                         Upload
                     </button>
+                    <button onClick={signOut}>Sign out</button>
                 </div>
-            
+            )}
         </Authenticator>
     );
 };
